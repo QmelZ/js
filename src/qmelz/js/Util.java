@@ -9,19 +9,15 @@ public class Util{
 
     // java version differences are h, and this class breaks in some cases so dont use it
 
-    public void set(Class<?> type, String name, Object value){
-        try{
-            Field field = type.getDeclaredField(name);
-            field.setAccessible(true);
+    public void set(Class<?> type, String name, Object value) throws Throwable{
+        Field field = type.getDeclaredField(name);
+        field.setAccessible(true);
 
-            Field modifiersField = Field.class.getDeclaredField("modifiers");
-            modifiersField.setAccessible(true);
-            modifiersField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
+        Field modifiersField = Field.class.getDeclaredField("modifiers");
+        modifiersField.setAccessible(true);
+        modifiersField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
 
-            field.set(null, value);
-        }catch(Throwable c){
-            Log.err(c);
-        }
+        field.set(null, value);
     }
 
     public Object get(Class<?> type, String name){
