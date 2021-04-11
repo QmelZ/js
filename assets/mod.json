@@ -1,12 +1,10 @@
 {
-  "name": "modtemplate",
-  "displayName": "Template",
-  "author": "[#8738ff[]]Sonnicon[[]]",
-  "description": "Gradle jar Mindustry mod template",
-  "version": "0",
-  "main": "sonnicon.modtemplate.ModTemplate",
-  "minGameVersion": "105",
-  "dependencies": [],
-  "hidden": false,
+  "name": "js-unblacklist",
+  "displayName": "JS Unblacklist",
+  "author": "QmelZ",
+  "description": "js mods without blacklist",
+  "version": "0.1",
+  "main": "qmelz.js.Scripts",
+  "minGameVersion": "126.2",
   "java": true
 }
