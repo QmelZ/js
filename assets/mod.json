@@ -3,7 +3,7 @@
   "displayName": "JS Unblacklist",
   "author": "QmelZ",
   "description": "js mods without blacklist",
-  "version": 0.2,
+  "version": 0.3,
   "main": "qmelz.js.Scripts",
   "minGameVersion": "126.2",
   "java": true
