@@ -4,6 +4,7 @@ plugins {
 
 group pGroup
 
+
 sourceSets.main {
     java.srcDir("src/")
     resources.srcDir("assets/")
