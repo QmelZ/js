@@ -8,9 +8,7 @@ import mindustry.game.*;
 import mindustry.mod.*;
 
 public class Scripts extends Mod{
-
-    @Override
-    public void loadContent(){
+    static{
         Vars.enableConsole = true;
         try{
             Reflect.<Seq<String>>get(Vars.mods.getScripts().getClass(), "blacklist").clear();
